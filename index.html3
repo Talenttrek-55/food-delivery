@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Food Delivery App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+    }
+    .food-item {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+    .food-item button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .food-item button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Food Delivery Menu</h1>
+
+  <div class="food-item">
+    <h2>Pizza</h2>
+    <p>Delicious cheese pizza with tomato sauce</p>
+    <button onclick="orderFood('Pizza')">Order Now</button>
+  </div>
+
+  <div class="food-item">
+    <h2>Burger</h2>
+    <p>Juicy beef burger with lettuce and tomato</p>
+    <button onclick="orderFood('Burger')">Order Now</button>
+  </div>
+
+  <div class="food-item">
+    <h2>Sushi</h2>
+    <p>Fresh salmon sushi rolls</p>
+    <button onclick="orderFood('Sushi')">Order Now</button>
+  </div>
+
+  <script>
+    function orderFood(foodName) {
+      alert(`Thank you for ordering ${foodName}!`);
+    }
+  </script>
+
+</body>
+</html>
